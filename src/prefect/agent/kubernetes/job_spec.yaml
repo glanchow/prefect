@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
         - name: flow
-          image: prefecthq/prefect:latest
+          image: glanchow/prefect:master
           imagePullPolicy: IfNotPresent
           command: ["/bin/sh", "-c"]
           args: ["prefect execute flow-run"]

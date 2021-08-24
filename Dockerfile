@@ -25,7 +25,7 @@ RUN apt update && \
     apt install -y gcc git tini build-essential && \
     mkdir /root/.prefect/ && \
     pip install "pip==20.2.4" && \
-    pip install --no-cache-dir git+https://github.com/PrefectHQ/prefect.git@${PREFECT_VERSION}#egg=prefect[${EXTRAS}] && \
+    pip install --no-cache-dir git+https://github.com/glanchow/prefect.git@${PREFECT_VERSION}#egg=prefect[${EXTRAS}] && \
     apt remove -y git && \
     apt clean && apt autoremove -y && \
     rm -rf /var/lib/apt/lists/*
